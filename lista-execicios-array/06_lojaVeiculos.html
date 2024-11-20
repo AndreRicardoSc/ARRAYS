@@ -13,11 +13,21 @@
     */
 
     //ENTRADA
-
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    let carrosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
+    let carrosHatch = ["308", "Focus", "i30"];
+    const adicionarCarro = prompt(`Informe um carro que você deseja adicionar em alguma das listas:\n carros SUV: ${carrosSUV.join(" - ")} \n carros Sedan: ${carrosSedan.join(" - ")} \n carros Hatch: ${carrosHatch.join(" - ")}`);
+    const qualLista = prompt(`Informe a lista que deseja adicionar: SUV, Sedan ou Hatch\n (escreva o nome da lista por completo)`).toLowerCase();
 
     //PROCESSAMENTO
-
+    if (qualLista == "suv" || qualLista == "carros suv") {
+        carrosSUV.push(adicionarCarro);
+    } else if (qualLista == "sedan" || qualLista == "carros sedan") {
+        carrosSedan.push(adicionarCarro);
+    } else {
+        carrosHatch.push(adicionarCarro);
+    }
 
     //SAÍDA
-
+    document.write(`Suas listas finais serão: <br> carros SUV: ${carrosSUV.join(" - ")} <br> carros Sedan: ${carrosSedan.join(" - ")} <br> carros Hatch: ${carrosHatch.join(" - ")} `);
 </script>

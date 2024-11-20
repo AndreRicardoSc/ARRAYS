@@ -9,11 +9,15 @@
     */
 
     //ENTRADA
-
-
+    let palavra = prompt(`Digite uma palavra:`).toLowerCase();
+    const letraProcurada = prompt(`Informe uma letra que deseja ver se existe e a posição da primeira na palavra que informou:`).toLowerCase();
     //PROCESSAMENTO
-
+    let posicao = palavra.search(letraProcurada) + 1;
 
     //SAÍDA
-
+    if (posicao > 0){
+        document.write(`A letra foi encontrada, está da ${posicao}ª posição.`);
+    } else {
+        document.write(`A letra não foi encontrada.`);
+    }
 </script>
