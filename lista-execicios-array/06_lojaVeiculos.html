@@ -16,16 +16,24 @@
     let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
     let carrosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
     let carrosHatch = ["308", "Focus", "i30"];
-    const adicionarCarro = prompt(`Informe um carro que você deseja adicionar em alguma das listas:\n carros SUV: ${carrosSUV.join(" - ")} \n carros Sedan: ${carrosSedan.join(" - ")} \n carros Hatch: ${carrosHatch.join(" - ")}`);
+    const adicionarCarro1 = prompt(`Informe o primeiro carro que você deseja adicionar em alguma das listas:\n carros SUV: ${carrosSUV.join(" - ")} \n carros Sedan: ${carrosSedan.join(" - ")} \n carros Hatch: ${carrosHatch.join(" - ")}`);
+    const adicionarCarro2 = prompt(`Informe o segundo que você deseja adicionar em alguma das listas:\n carros SUV: ${carrosSUV.join(" - ")} \n carros Sedan: ${carrosSedan.join(" - ")} \n carros Hatch: ${carrosHatch.join(" - ")}`);
+    const adicionarCarro3 = prompt(`Informe o terceiro que você deseja adicionar em alguma das listas:\n carros SUV: ${carrosSUV.join(" - ")} \n carros Sedan: ${carrosSedan.join(" - ")} \n carros Hatch: ${carrosHatch.join(" - ")}`);
     const qualLista = prompt(`Informe a lista que deseja adicionar: SUV, Sedan ou Hatch\n (escreva o nome da lista por completo)`).toLowerCase();
 
     //PROCESSAMENTO
     if (qualLista == "suv" || qualLista == "carros suv") {
-        carrosSUV.push(adicionarCarro);
+        carrosSUV.push(adicionarCarro1);
+        carrosSUV.push(adicionarCarro2);
+        carrosSUV.push(adicionarCarro3);
     } else if (qualLista == "sedan" || qualLista == "carros sedan") {
-        carrosSedan.push(adicionarCarro);
+        carrosSUV.push(adicionarCarro1);
+        carrosSUV.push(adicionarCarro2);
+        carrosSUV.push(adicionarCarro3);
     } else {
-        carrosHatch.push(adicionarCarro);
+        carrosSUV.push(adicionarCarro1);
+        carrosSUV.push(adicionarCarro2);
+        carrosSUV.push(adicionarCarro3);
     }
 
     //SAÍDA
