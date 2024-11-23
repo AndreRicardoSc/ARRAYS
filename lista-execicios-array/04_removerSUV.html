@@ -10,7 +10,7 @@
     //ENTRADA
     const carrosSUVantigos = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
     let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
-    let carroParaRemocao = prompt(`Informe um carro para qie possamos retirar da desta lista:\n ${carrosSUV.join(" - ")}`).toLowerCase();
+    let carroParaRemocao = prompt(`Informe um carro para qie possamos retirar da desta lista:\n ${carrosSUV.join(" - ")}`);
     //PROCESSAMENTO
     let remocao = carrosSUV.indexOf(carroParaRemocao);
     carrosSUV.splice(remocao, 1);
